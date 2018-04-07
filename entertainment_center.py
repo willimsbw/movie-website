@@ -46,4 +46,4 @@ moonrise_kingdom = media.Movie("Moonrise Kingdom",
 
 movie_list = [lady_bird, coco, midnight_in_paris, shape_of_water, moonrise_kingdom]
 
-fresh_tomatoes.open_media_page(movie_list)
+fresh_tomatoes.open_movies_page(movie_list)
