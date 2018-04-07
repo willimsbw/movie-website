@@ -1,18 +1,18 @@
 # Static Movie Webpage
 
-entertainment_center.py will generate a file called fresh_tomatoes.html, which will open a static webpage displaying my favorite movie's poster art and name. When a piece of poster art is clicked, it will play the movie's trailer. 
+entertainment_center.py generates a file called fresh_tomatoes.html, which
+opens a static webpage displaying my favorite movie's poster art and name. When
+a piece of poster art is clicked, it will play the movie's trailer.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+If you download all of files and run fresh_tomatoes.py, it will generate
+fresh_tomatoes.html. Open that file to view the page, and that's it!
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Python 3: https://www.python.org/ftp/python/3.6.5/python-3.6.5.exe
+A web browser for viewing HTML files
 
 ### Installing
 
@@ -68,7 +68,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
