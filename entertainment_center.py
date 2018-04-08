@@ -49,7 +49,7 @@ midnight_in_paris = media.Movie("Midnight in Paris",
                                  "Age's icons of art and literature. The more "
                                  "time Gil spends with these cultural heroes "
                                  "of the past, the more dissatisfied he "
-                                 "becomes with the present"),
+                                 "becomes with the present."),
                                 "https://www.youtube.com/watch?v=BYRWfS2s2v4",
                                 "https://www.movieposter.com/posters/archive/main/145/MPW-72510",
                                 100)
