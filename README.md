@@ -11,8 +11,11 @@ fresh_tomatoes.html. Open that file to view the page, and that's it!
 
 ### Prerequisites
 
-Python 3: https://www.python.org/ftp/python/3.6.5/python-3.6.5.exe
-A web browser for viewing HTML files
+To run fresh_tomatoes.py, you'll need to install Python 3:
+https://www.python.org/ftp/python/3.6.5/python-3.6.5.exe
+
+To view the fresh_tomatoes.html file generated when fresh_tomatoes.py is run,
+you'll need a web browser installed.
 
 ### Installing
 
