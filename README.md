@@ -1,7 +1,7 @@
 # Static Movie Webpage
 
 entertainment_center.py generates a file called fresh_tomatoes.html, which
-opens a static webpage displaying my favorite movies' poster art and name. When
+opens a static webpage displaying my favorite movies' poster art and names. When
 a piece of poster art is clicked, it will play the movie's trailer.
 
 ## Getting Started
