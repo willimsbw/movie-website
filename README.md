@@ -19,7 +19,7 @@ you'll need a web browser installed.
 
 ## Built With
 
-* [Python 3](https://docs.python.org/3/) - The web framework used
+* [Python 3](https://docs.python.org/3/)
 
 ## Contributing
 
