@@ -6,7 +6,7 @@ a piece of poster art is clicked, it will play the movie's trailer.
 
 ## Getting Started
 
-If you download all of files and run fresh_tomatoes.py, it will generate
+If you download all of the files and run fresh_tomatoes.py, it will generate
 fresh_tomatoes.html. Open that file to view the page, and that's it!
 
 ### Prerequisites
@@ -31,7 +31,8 @@ and issue or pull request!
 * **Bryan Williams** - *Initial work* - [willimsbw](https://github.com/willimsbw)
 * Udacity's team, who provided the original version of fresh_tomatoes.py
 
-See also the list of [contributors](https://github.com/willimsbw/movie-website/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/willimsbw/movie-website/graphs/contributors)
+who participated in this project.
 
 ## Acknowledgments
 
