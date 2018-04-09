@@ -25,7 +25,6 @@ you'll need a web browser installed.
 * [The Movie Database](https://www.themoviedb.org)
 -- This product uses the TMDb API but is not endorsed or certified by TMDb. --
 * [The requests library for Python 3](http://docs.python-requests.org/en/latest/user/quickstart/)
-* [BlackBox](https://github.com/StackExchange/blackbox)
 
 
 ## Contributing
