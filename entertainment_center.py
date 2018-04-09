@@ -25,7 +25,6 @@ def get_movie_id(key, title):
     #returns the value of the "id" attribute
     return json_data["results"][0]["id"]
 
-
 def make_movie(key, title):
     """
     Uses the The Movie Database api to get info for a movie based on its id
