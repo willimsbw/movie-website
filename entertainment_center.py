@@ -92,6 +92,8 @@ import api_key
 #movie_list = [lady_bird, coco, midnight_in_paris, shape_of_water,
 #              moonrise_kingdom]
 
+
+
 def get_movie_id(title):
     """
     Uses the The Movie Database api to search for an english-language,
@@ -99,6 +101,7 @@ def get_movie_id(title):
 
     title: str. the title of the movie whose id you want
     """
+    api_key = api_key["key"]
 
     #the required values to insert after the api key in the request url
     payload = {"language": "en-US", "query": title, "page":"1",
@@ -107,15 +110,15 @@ def get_movie_id(title):
     #returns a json object from TMDB's search and decodes it into a Python
     #object, and assigns that to json_data
     json_data = requests.get("https://api.themoviedb.org/3/search/movie?"
-                             "api_key=a1d4be657a9902c250558a407b9aa337",
+                             "api_key=" + api_key,
                              params = payload).json()
 
     #returns the value of the "id" attribute
     return json_data["results"][0]["id"]
 
 
-#def make_movie(key, movie_id):
-    #url =
+def make_movie(key, movie_id):
+    url =
 
 #fresh_tomatoes.open_movies_page(movie_list)
 movie_id = get_movie_id("Lady Bird")
