@@ -114,7 +114,7 @@ def get_movie_id(key, title):
     return json_data["results"][0]["id"]
 
 
-def make_movie(key, movie_id):
+def lookup_id(key, movie_id):
     """
     Uses the The Movie Database api to get info for a movie based on its id
     and returns those details as a python object
