@@ -22,6 +22,7 @@ you'll need a web browser installed.
 
 * [Python 3](https://docs.python.org/3/)
 * [The Movie Database]("https://www.themoviedb.org")
+-- This product uses the TMDb API but is not endorsed or certified by TMDb. --
 
 ## Contributing
 
