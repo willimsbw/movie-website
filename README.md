@@ -6,8 +6,9 @@ a piece of poster art is clicked, it will play the movie's trailer.
 
 ## Getting Started
 
-If you download all of the files and run fresh_tomatoes.py, it will generate
-fresh_tomatoes.html. Open that file to view the page, and that's it!
+If you download all of the files and run fresh_tomatoes.py with an internet
+connection, it will generate fresh_tomatoes.html. Open that file to view the
+page, and that's it!
 
 ### Prerequisites
 
@@ -20,6 +21,7 @@ you'll need a web browser installed.
 ## Built With
 
 * [Python 3](https://docs.python.org/3/)
+* [The Movie Database]("https://www.themoviedb.org")
 
 ## Contributing
 
