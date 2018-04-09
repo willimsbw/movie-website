@@ -93,6 +93,7 @@ import api_key
 #              moonrise_kingdom]
 
 
+my_key = api_key.key
 
 def get_movie_id(title):
     """
@@ -101,7 +102,6 @@ def get_movie_id(title):
 
     title: str. the title of the movie whose id you want
     """
-    my_key = api_key.key
 
     #the required values to insert after the api key in the request url
     payload = {"language": "en-US", "query": title, "page":"1",
