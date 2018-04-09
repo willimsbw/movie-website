@@ -133,23 +133,22 @@ def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
     content = ''
     for movie in movies:
-        #figure out if there's a poster and fill in default if not
+        # figure out if there's a poster and fill in default if not
         if movie["poster_path"]:
-            poster_url="https://image.tmdb.org/t/p/w500" + movie["poster_path"]
+            poster_url = "https://image.tmdb.org/t/p/w500" + movie["poster_path"]
         else:
-            poster_url= "https://drive.google.com/uc?export=view&id=1_mAIDwWHm2ROdsQzFOn71d76AEZhriRA"
+            poster_url = "https://drive.google.com/uc?export=view&id=1_mAIDwWHm2ROdsQzFOn71d76AEZhriRA"
 
-        #make sure the key is for the trailer
+        # make sure the key is for the trailer
         trailer_id = None
         for item in movie["videos"]["results"]:
             if item["type"] == "Trailer":
                 if trailer_id == None:
                     trailer_id = item["key"]
 
-        #if there was no trailer, use first available video
+        # if there was no trailer, use first available video
         if trailer_id == None:
             trailer_id = movie["videos"]["results"][0]["key"]
-
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
