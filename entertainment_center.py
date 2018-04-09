@@ -1,7 +1,6 @@
 import media
 import fresh_tomatoes
 import requests
-import json
 import api_key
 
 #def print_all_movie_attributes(object):
