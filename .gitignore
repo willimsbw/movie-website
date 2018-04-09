@@ -103,3 +103,6 @@ ENV/
 /keyrings/live/pubring.kbx~
 /keyrings/live/secring.gpg
 /foo.txt
+
+# api key
+api_key.py
