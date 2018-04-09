@@ -12,9 +12,9 @@ page, and that's it!
 
 ### Prerequisites
 
-To run fresh_tomatoes.py, you'll need to install [Python 3]("https://www.python.org/ftp/python/3.6.5/python-3.6.5.exe"):
+To run fresh_tomatoes.py, you'll need to install [Python 3](https://www.python.org/ftp/python/3.6.5/python-3.6.5.exe)
 
-Then you'll need to install the [requests library]("http://docs.python-requests.org/en/latest/user/install/#install")
+Then you'll need to install the [requests library](http://docs.python-requests.org/en/latest/user/install/#install)
 
 To view the fresh_tomatoes.html file generated when fresh_tomatoes.py is run,
 you'll need a web browser installed.
