@@ -138,5 +138,13 @@ def make_movie(key, title):
 
 #fresh_tomatoes.open_movies_page(movie_list)
 my_key = api_key.key
-movie_obj = make_movie(my_key, "Lady Bird")
-print(movie_obj)
+movie_titles = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
+                "Midnight in Paris", "Fantastic Mr. Fox", "The Shape of Water"
+                ]
+
+favorite_movies = []
+
+for title in movie_titles:
+    movie = make_movie(my_key, title)
+    print("adding " + movie["title"] + " movie_obj to favorite_movies.")
+    favorite_movies.append(movie)
