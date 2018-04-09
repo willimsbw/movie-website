@@ -13,16 +13,16 @@ def get_movie_id(key, title):
     title: str. the title of the movie whose id you want
     """
 
-    #the required values to insert after the generic request url
+    # the required values to insert after the generic request url
     payload = {"api_key": key, "language": "en-US", "query": title,
                "page":"1", "include_adult":"false"}
 
-    #returns a json object from TMDB's search and decodes it into a Python
-    #object, and assigns that to json_data
+    # returns a json object from TMDB's search and decodes it into a Python
+    # object, and assigns that to json_data
     json_data = requests.get("https://api.themoviedb.org/3/search/movie?",
                              params = payload).json()
 
-    #returns the value of the "id" attribute
+    # returns the value of the "id" attribute
     return json_data["results"][0]["id"]
 
 def make_movie(key, title):
@@ -36,12 +36,12 @@ def make_movie(key, title):
 
     movie_id = get_movie_id(key, title)
 
-    #the values to insert after the generic request url
+    # the values to insert after the generic request url
     payload = {"api_key": key, "language": "en-US",
                "append_to_response": "videos"}
 
-    #returns a json object from TMDB's Get Details and decodes it into a
-    #Python object, and assigns that to json_data
+    # returns a json object from TMDB's Get Details and decodes it into a
+    # Python object, and assigns that to json_data
     json_data = requests.get("https://api.themoviedb.org/3/movie/"
                              + str(movie_id) + "?", params = payload).json()
 
@@ -62,17 +62,17 @@ def get_movie_objects(key, titles):
 
     return movie_objects
 
-#get api key
+# get api key
 my_key = api_key.key
 
-#titles of movies we want to display
+# titles of movies we want to display
 favorite_movies = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
                 "Midnight in Paris", "Fantastic Mr. Fox", "The Shape of Water"
                 , "A Serious Man", "Love Actually", "Isle of Dogs",
                 "The Grand Budapest Hotel"]
 
-#get list of movie objects; one for each favorite movie
+# get list of movie objects; one for each favorite movie
 movies = get_movie_objects(my_key, favorite_movies)
 
-#generate fresh_tomatoes.html for my favorite movies
+# generate fresh_tomatoes.html for my favorite movies
 fresh_tomatoes.open_movies_page(movies)
