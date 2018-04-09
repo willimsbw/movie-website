@@ -19,6 +19,12 @@ Then you'll need to install the [requests library](http://docs.python-requests.o
 Finally, you'll need to get your own api key for [The Movie Database](https://www.themoviedb.org/settings/api)
 and store it as a string in a variable: "key" in a file called "api_key.py".
 
+api_key.py:
+```
+key = <<<your api key here>>>
+```
+
+
 To view the fresh_tomatoes.html file generated when fresh_tomatoes.py is run,
 you'll need a web browser installed.
 
