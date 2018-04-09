@@ -143,7 +143,8 @@ def create_movie_tiles_content(movies):
         trailer_id = None
         for item in movie["videos"]["results"]:
             if item["type"] == "Trailer":
-                trailer_id = item["key"]
+                if trailer_id == None:
+                    trailer_id = item["key"]
 
         #if there was no trailer, use first available video
         if trailer_id == None:
