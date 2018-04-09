@@ -163,4 +163,4 @@ for movie in movies:
     print(movie["title"] + " had a budget of " + str(movie["budget"]) +
           " dollars.")
 
-#fresh_tomatoes.open_movies_page(movie_list)
+fresh_tomatoes.open_movies_page(movies)
