@@ -17,7 +17,7 @@ To run fresh_tomatoes.py, you'll need to install [Python 3](https://www.python.o
 Then you'll need to install the [requests library](http://docs.python-requests.org/en/latest/user/install/#install)
 
 Finally, you'll need to get your own api key for [The Movie Database](https://www.themoviedb.org/settings/api)
-and store it as a string in a variable called key in a file called api_key.py.
+and store it as a string in a variable: "key" in a file called "api_key.py".
 
 To view the fresh_tomatoes.html file generated when fresh_tomatoes.py is run,
 you'll need a web browser installed.
