@@ -136,15 +136,30 @@ def make_movie(key, title):
 
     return json_data
 
-#fresh_tomatoes.open_movies_page(movie_list)
+def get_movie_objects(key, titles):
+    """
+    Takes a list of movie names, and returns a list of movie objects with
+    information about each of the movies named in the original list
+
+    titles: list of strings. List of movie titles
+    """
+    movie_objects = []
+
+    for title in titles:
+        movie = make_movie(key, title)
+        movie_objects.append(movie)
+
+    return movie_objects
+
+
 my_key = api_key.key
 movie_titles = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
                 "Midnight in Paris", "Fantastic Mr. Fox", "The Shape of Water"
-                ]
+                , "A Serious Man", "Love Actually"]
 
-favorite_movies = []
+movies = get_movie_objects(my_key, movie_titles)
 
-for title in movie_titles:
-    movie = make_movie(my_key, title)
-    print("adding " + movie["title"] + " movie_obj to favorite_movies.")
-    favorite_movies.append(movie)
+for movie in movies:
+    print(movie["title"] + " had a budget of " + str(movie["budget"]) + " dollars.")
+
+#fresh_tomatoes.open_movies_page(movie_list)
