@@ -143,11 +143,11 @@ def create_movie_tiles_content(movies):
         trailer_id = None
         for item in movie["videos"]["results"]:
             if item["type"] == "Trailer":
-                if trailer_id == None:
+                if trailer_id is None:
                     trailer_id = item["key"]
 
         # if there was no trailer, use first available video
-        if trailer_id == None:
+        if trailer_id is None:
             trailer_id = movie["videos"]["results"][0]["key"]
 
         # Append the tile for the movie with its content filled in
