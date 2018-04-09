@@ -22,9 +22,9 @@ you'll need a web browser installed.
 ## Built With
 
 * [Python 3](https://docs.python.org/3/)
-* [The Movie Database]("https://www.themoviedb.org")
+* [The Movie Database](https://www.themoviedb.org)
 -- This product uses the TMDb API but is not endorsed or certified by TMDb. --
-* [The requests library for Python 3]("http://docs.python-requests.org/en/latest/user/quickstart/")
+* [The requests library for Python 3](http://docs.python-requests.org/en/latest/user/quickstart/)
 
 
 ## Contributing
