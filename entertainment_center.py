@@ -1,7 +1,8 @@
 import media
 import fresh_tomatoes
 import requests
-import api_key.py
+import json
+import api_key
 
 #def print_all_movie_attributes(object):
 #    """
@@ -92,6 +93,15 @@ import api_key.py
 #movie_list = [lady_bird, coco, midnight_in_paris, shape_of_water,
 #              moonrise_kingdom]
 
+def get_movie_id(title):
+    payload = {"language": "en-US", "query": title, "page":"1", "include_adult":"false"}
+    json_data = requests.get("https://api.themoviedb.org/3/search/movie?api_key=a1d4be657a9902c250558a407b9aa337", params = payload).json()
+    return json_data
 
 
-fresh_tomatoes.open_movies_page(movie_list)
+#def make_movie(key, movie_id):
+    #url =
+
+#fresh_tomatoes.open_movies_page(movie_list)
+movie_id = get_movie_id("Lady Bird")["results"][0]["id"]
+print(movie_id)
