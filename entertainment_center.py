@@ -160,6 +160,7 @@ movie_titles = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
 movies = get_movie_objects(my_key, movie_titles)
 
 for movie in movies:
-    print(movie["title"] + " had a budget of " + str(movie["budget"]) + " dollars.")
+    print(movie["title"] + " had a budget of " + str(movie["budget"]) +
+          " dollars.")
 
 #fresh_tomatoes.open_movies_page(movie_list)
