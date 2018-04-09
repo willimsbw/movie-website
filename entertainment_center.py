@@ -114,15 +114,16 @@ def get_movie_id(key, title):
     return json_data["results"][0]["id"]
 
 
-def lookup_movie_id(key, movie_id):
+def make_movie(key, title):
     """
     Uses the The Movie Database api to get info for a movie based on its id
     and returns those details as a python object
 
     key: str. api key for The Movie Database
-    title: str. the TMDB id of the movie whose information you want
+    title: str. the title of the movie whose information you want
     """
 
+    movie_id = get_movie_id(key, title)
 
     #the values to insert after the generic request url
     payload = {"api_key": key, "language": "en-US",
@@ -135,12 +136,7 @@ def lookup_movie_id(key, movie_id):
 
     return json_data
 
-def make_movie(key, title):
-    id = get_movie_id(key, title)
-    return lookup_movie_id(key, id)
-
 #fresh_tomatoes.open_movies_page(movie_list)
 my_key = api_key.key
 movie_obj = make_movie(my_key, "Lady Bird")
-
 print(movie_obj)
