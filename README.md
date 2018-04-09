@@ -24,7 +24,7 @@ api_key.py:
 key = "<<<your api key here>>>"
 ```
 
-To view the fresh_tomatoes.html file generated when fresh_tomatoes.py is run,
+To view the fresh_tomatoes.html file generated when entertainment_center.py is run,
 you'll need a web browser installed.
 
 ## Built With
