@@ -1,6 +1,6 @@
 import media
 import fresh_tomatoes
-
+import requests
 
 #def print_all_movie_attributes(object):
 #    """
@@ -90,5 +90,7 @@ import fresh_tomatoes
 #
 #movie_list = [lady_bird, coco, midnight_in_paris, shape_of_water,
 #              moonrise_kingdom]
+
+
 
 fresh_tomatoes.open_movies_page(movie_list)
