@@ -15,15 +15,16 @@ def get_movie_id(key, title):
 
     # the required values to insert after the generic request url
     payload = {"api_key": key, "language": "en-US", "query": title,
-               "page":"1", "include_adult":"false"}
+               "page": "1", "include_adult": "false"}
 
     # returns a json object from TMDB's search and decodes it into a Python
     # object, and assigns that to json_data
     json_data = requests.get("https://api.themoviedb.org/3/search/movie?",
-                             params = payload).json()
+                             params=payload).json()
 
     # returns the value of the "id" attribute
     return json_data["results"][0]["id"]
+
 
 def make_movie(key, title):
     """
@@ -42,10 +43,11 @@ def make_movie(key, title):
 
     # returns a json object from TMDB's Get Details and decodes it into a
     # Python object, and assigns that to json_data
-    json_data = requests.get("https://api.themoviedb.org/3/movie/"
-                             + str(movie_id) + "?", params = payload).json()
+    json_data = requests.get("https://api.themoviedb.org/3/movie/" +
+                             str(movie_id) + "?", params=payload).json()
 
     return json_data
+
 
 def get_movie_objects(key, titles):
     """
@@ -67,9 +69,9 @@ my_key = api_key.key
 
 # titles of movies we want to display
 favorite_movies = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
-                "Midnight in Paris", "Fantastic Mr. Fox", "The Shape of Water"
-                , "A Serious Man", "Love Actually", "Isle of Dogs",
-                "The Grand Budapest Hotel"]
+                   "Midnight in Paris", "Fantastic Mr. Fox",
+                   "The Shape of Water", "A Serious Man", "Love Actually",
+                   "Isle of Dogs", "The Grand Budapest Hotel"]
 
 # get list of movie objects; one for each favorite movie
 movies = get_movie_objects(my_key, favorite_movies)
