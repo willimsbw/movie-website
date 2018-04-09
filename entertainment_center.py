@@ -62,16 +62,17 @@ def get_movie_objects(key, titles):
 
     return movie_objects
 
-
+#get api key
 my_key = api_key.key
-movie_titles = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
+
+#titles of movies we want to display
+favorite_movies = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
                 "Midnight in Paris", "Fantastic Mr. Fox", "The Shape of Water"
-                , "A Serious Man", "Love Actually"]
+                , "A Serious Man", "Love Actually", "Isle of Dogs",
+                "The Grand Budapest Hotel"]
 
-movies = get_movie_objects(my_key, movie_titles)
+#get list of movie objects; one for each favorite movie
+movies = get_movie_objects(my_key, favorite_movies)
 
-for movie in movies:
-    print(movie["title"] + " had a budget of " + str(movie["budget"]) +
-          " dollars.")
-
+#generate fresh_tomatoes.html for my favorite movies
 fresh_tomatoes.open_movies_page(movies)
