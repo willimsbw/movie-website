@@ -139,11 +139,22 @@ def create_movie_tiles_content(movies):
         else:
             poster_url= "https://drive.google.com/uc?export=view&id=1_mAIDwWHm2ROdsQzFOn71d76AEZhriRA"
 
+        #make sure the key is for the trailer
+        trailer_id = Null
+        for item in movie["videos"]["results"]:
+            if item["type"] == "Trailer":
+                trailer_id = item["key"]
+
+        #if there was no trailer, use first available video
+        if trailer_id == Null:
+            trailer_id = movie["videos"]["results"][0]["key"]
+
+
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie["title"],
             poster_image_url=poster_url,
-            trailer_youtube_id=movie["videos"]["results"][0]["key"]
+            trailer_youtube_id=trailer_id
         )
     return content
 
