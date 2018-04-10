@@ -59,6 +59,13 @@ main_page_head = '''
         .navbar {
             min-height: 80px;
         }
+        .row.display-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .thumbnail {
+            height: 100%;
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -118,7 +125,9 @@ main_page_content = '''
       </div>
     </div>
     <div class="container">
-      {movie_tiles}
+        <div class="row display-flex">
+            {movie_tiles}
+        </div>
     </div>
   </body>
 </html>
