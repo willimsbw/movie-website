@@ -63,6 +63,12 @@ main_page_head = '''
             display: flex;
             flex-direction: column;
         }
+        .thumbnail .caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
