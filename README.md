@@ -51,3 +51,4 @@ who participated in this project.
 
 * Thanks to Udacity for their nanodegree programs
 * Thanks to Free Code Camp, for getting me started and whose projects provided me with some previous experience using REST api's and an idea for how to approach this type of site
+* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2), for providing this really great readme template
