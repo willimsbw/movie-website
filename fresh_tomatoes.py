@@ -163,14 +163,15 @@ def create_movie_tiles_content(movies):
         else:
             poster_url = "https://drive.google.com/uc?export=view&id=1_mAIDwWHm2ROdsQzFOn71d76AEZhriRA"
 
-        # make sure the key is for the trailer
+        # Make sure the key is for the trailer and not some other related
+        # video
         trailer_id = None
         for item in movie["videos"]["results"]:
             if item["type"] == "Trailer":
                     trailer_id = item["key"]
                     break
 
-        # if there was no trailer, use first available video
+        # If there was no trailer, use first available video
         if trailer_id is None:
             trailer_id = movie["videos"]["results"][0]["key"]
 
