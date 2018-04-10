@@ -41,7 +41,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #E6E6E6;
+            background-color: #FF8552;
             cursor: pointer;
         }
         .scale-media {
@@ -66,7 +66,7 @@ main_page_head = '''
         }
         .thumbnail {
             height: 100%;
-            background-color: #FF8552;
+            background-color: #E6E6E6;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
