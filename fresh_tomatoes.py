@@ -69,7 +69,7 @@ main_page_head = '''
         }
         .header-text {
             color: #E6E6E6;
-            text-align: left;
+            text-align: center;
             font-size: 150%;
         }
     </style>
