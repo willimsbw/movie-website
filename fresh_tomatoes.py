@@ -40,7 +40,7 @@ main_page_head = '''
             margin-bottom: 20px;
             padding-top: 20px;
         }
-        .movie-tile:hover {
+        .thumbnail:hover {
             background-color: #FF8552;
             cursor: pointer;
         }
