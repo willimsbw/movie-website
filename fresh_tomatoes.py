@@ -71,8 +71,6 @@ main_page_head = '''
             color: #E6E6E6;
             text-align: left;
             font-size: 150%;
-            position: absolute;
-            bottom: 5;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -129,11 +127,13 @@ main_page_content = '''
                 <img src="https://www.themoviedb.org/static_cache/v4/logos/powered-by-rectangle-green-dcada16968ed648d5eb3b36bbcfdd8cdf804f723dcca775c8f2bf4cea025aad6.svg" height="50px" width="auto" alt="">
             </a>
           </div>
-            <h1 class="header-text">Click on a poster to watch its trailer</h1>
         </div>
       </div>
     </div>
     <div class="container">
+        <div class="row">
+            <h1 class="header-text">Click on any poster to watch its trailer</h1>
+        </div>
         <div class="row display-flex">
             {movie_tiles}
         </div>
