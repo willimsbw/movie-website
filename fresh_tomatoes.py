@@ -19,6 +19,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #39393A;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -40,7 +41,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #E6E6E6;
             cursor: pointer;
         }
         .scale-media {
@@ -65,6 +66,7 @@ main_page_head = '''
         }
         .thumbnail {
             height: 100%;
+            background-color: #FF8552;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
