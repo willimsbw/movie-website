@@ -158,7 +158,8 @@ def create_movie_tiles_content(movies):
     for movie in movies:
         # figure out if there's a poster and fill in default if not
         if movie["poster_path"]:
-            poster_url = "https://image.tmdb.org/t/p/w500" + movie["poster_path"]
+            poster_url = "https://image.tmdb.org/t/p/w500" +
+            movie["poster_path"]
         else:
             poster_url = "https://drive.google.com/uc?export=view&id=1_mAIDwWHm2ROdsQzFOn71d76AEZhriRA"
 
