@@ -69,8 +69,8 @@ main_page_head = '''
         }
         .header-text {
             color: #E6E6E6;
-            text-align: center;
-            font-size: 150%;
+            text-align: left;
+            font-size: 200%;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
