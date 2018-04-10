@@ -57,7 +57,11 @@ main_page_head = '''
             background-color: white;
         }
         .navbar {
-            min-height: 100px;
+            min-height: 80px;
+        }
+        .navbar-brand {
+            min-height: 60px;
+            min-width: auto;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
