@@ -65,7 +65,6 @@ main_page_head = '''
             flex-wrap: wrap;
         }
         .thumbnail {
-            height: 100%;
             background-color: #E6E6E6;
         }
     </style>
