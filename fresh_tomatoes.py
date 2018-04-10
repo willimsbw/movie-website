@@ -59,6 +59,7 @@ main_page_head = '''
         }
         .navbar {
             min-height: 80px;
+            background-color: #39393A;
         }
         .row.display-flex {
             display: flex;
@@ -120,7 +121,7 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="https://www.themoviedb.org/?language=en">
