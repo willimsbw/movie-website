@@ -19,6 +19,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #39393A;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -39,8 +40,8 @@ main_page_head = '''
             margin-bottom: 20px;
             padding-top: 20px;
         }
-        .movie-tile:hover {
-            background-color: #EEE;
+        .thumbnail:hover {
+            background-color: #FF8552;
             cursor: pointer;
         }
         .scale-media {
@@ -55,6 +56,22 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .navbar {
+            min-height: 80px;
+            background-color: #39393A;
+        }
+        .row.display-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .thumbnail {
+            background-color: #E6E6E6;
+        }
+        .header-text {
+            color: #E6E6E6;
+            text-align: right;
+            font-size: 200%;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -104,16 +121,21 @@ main_page_content = '''
 
     <!-- Main Page Content -->
     <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="https://www.themoviedb.org/?language=en">
+                <img src="https://www.themoviedb.org/static_cache/v4/logos/powered-by-rectangle-green-dcada16968ed648d5eb3b36bbcfdd8cdf804f723dcca775c8f2bf4cea025aad6.svg" height="50px" width="auto" alt="">
+            </a>
           </div>
+            <h1 class="header-text">Click on any poster to watch its trailer</h1>
         </div>
       </div>
     </div>
     <div class="container">
-      {movie_tiles}
+        <div class="row display-flex">
+            {movie_tiles}
+        </div>
     </div>
   </body>
 </html>
@@ -122,9 +144,10 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+<div class="col-sm-6 col-md-4 col-lg-3 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}">
+    <a class="thumbnail" data-toggle="modal" data-target="#trailer">
+        <img src="{poster_image_url}">
+    </a>
 </div>
 '''
 
@@ -152,7 +175,6 @@ def create_movie_tiles_content(movies):
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
-            movie_title=movie["title"],
             poster_image_url=poster_url,
             trailer_youtube_id=trailer_id
         )
