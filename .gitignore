@@ -104,5 +104,6 @@ ENV/
 /keyrings/live/secring.gpg
 /foo.txt
 
-# api key
+# user files
 api_key.py
+fresh_tomatoes.html
