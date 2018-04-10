@@ -71,7 +71,7 @@ my_key = api_key.key
 favorite_movies = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
                    "Midnight in Paris", "Fantastic Mr. Fox",
                    "The Shape of Water", "A Serious Man", "Love Actually",
-                   "Isle of Dogs", "The Grand Budapest Hotel"]
+                   "Isle of Dogs", "The Grand Budapest Hotel", "Call Me by Your Name", "The King's Speech", "La La Land", "The Big Short", "Birdman", "Her", "American Hustle"]
 
 # get list of movie objects; one for each favorite movie
 movies = get_movie_objects(my_key, favorite_movies)
