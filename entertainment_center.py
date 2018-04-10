@@ -1,4 +1,3 @@
-import media
 import fresh_tomatoes
 import requests
 import api_key
