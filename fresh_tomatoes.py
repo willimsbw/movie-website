@@ -59,10 +59,6 @@ main_page_head = '''
         .navbar {
             min-height: 80px;
         }
-        #tmbd-logo {
-            min-height: 60px;
-            min-width: auto;
-        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
@@ -115,7 +111,7 @@ main_page_content = '''
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="https://www.themoviedb.org/?language=en">
-                <img id="tmbd-logo" src="https://www.themoviedb.org/static_cache/v4/logos/powered-by-rectangle-green-dcada16968ed648d5eb3b36bbcfdd8cdf804f723dcca775c8f2bf4cea025aad6.svg" alt="">
+                <img src="https://www.themoviedb.org/static_cache/v4/logos/powered-by-rectangle-green-dcada16968ed648d5eb3b36bbcfdd8cdf804f723dcca775c8f2bf4cea025aad6.svg" min-height="60px" min-width="auto" alt="">
             </a>
           </div>
         </div>
