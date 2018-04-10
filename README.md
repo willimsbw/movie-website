@@ -9,7 +9,7 @@ of poster art is clicked, it will play the movie's trailer.
 If you meet all of the prerequisites, download entertainment_center.py and
 fresh_tomatoes.py. Run fresh_tomatoes.py while connected to the internet, and
 it will generate fresh_tomatoes.html. Open the new html file to view a webpage
-of my favorite movies
+of my favorite movies.
 
 ### Prerequisites
 
