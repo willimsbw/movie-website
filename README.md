@@ -1,14 +1,11 @@
 # Static Movie Webpage
 
 entertainment_center.py generates a file called fresh_tomatoes.html, which
-opens a static webpage displaying my favorite movies' poster art and names. When
-a piece of poster art is clicked, it will play the movie's trailer.
+opens a static webpage displaying my favorite movies' poster art and names. When a piece of poster art is clicked, it will play the movie's trailer.
 
 ## Getting Started
 
-If you download all of the files and run fresh_tomatoes.py with an internet
-connection, it will generate fresh_tomatoes.html. Open that file to view the
-page, and that's it!
+If you meet all of the prerequisites, download all of the files, and run fresh_tomatoes.py with an internet connection, it will generate fresh_tomatoes.html. Open that file to view the page, and that's it!
 
 ### Prerequisites
 
@@ -16,16 +13,14 @@ To run fresh_tomatoes.py, you'll need to install [Python 3](https://www.python.o
 
 Then you'll need to install the [requests library](http://docs.python-requests.org/en/latest/user/install/#install)
 
-Finally, you'll need to get your own api key for [The Movie Database](https://www.themoviedb.org/settings/api)
-and store it as a string in a variable: "key" in a file called "api_key.py".
+Finally, you'll need to get your own api key for [The Movie Database](https://www.themoviedb.org/settings/api) and store it as a string in a variable: "key" in a file called "api_key.py".
 
-api_key.py:
+api_key.py entire contents:
 ```
 key = "<<<your api key here>>>"
 ```
 
-To view the fresh_tomatoes.html file generated when entertainment_center.py is run,
-you'll need a web browser installed.
+To view the fresh_tomatoes.html file generated when entertainment_center.py is run, you'll need a web browser installed.
 
 ## Built With
 
@@ -37,8 +32,7 @@ you'll need a web browser installed.
 
 ## Contributing
 
-If you find an issue or have a feature you think I should add, feel free to submit
-and issue or pull request!
+If you find an issue or have a feature you think I should add, feel free to submit an issue or pull request!
 
 ## Authors
 
@@ -51,6 +45,4 @@ who participated in this project.
 ## Acknowledgments
 
 * Thanks to Udacity for their nanodegree programs
-* Thanks to Free Code Camp, for getting me started and whose twitch api project
-  provided me with some previous experience using REST api's and an idea for how
-  to approach this type of site
+* Thanks to Free Code Camp, for getting me started and whose projects provided me with some previous experience using REST api's and an idea for how to approach this type of site
