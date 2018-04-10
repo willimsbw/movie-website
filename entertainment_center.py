@@ -72,9 +72,11 @@ my_key = api_key.key
 favorite_movies = ["Lady Bird", "Coco", "I, Tonya", "Moonrise Kingdom",
                    "Midnight in Paris", "Fantastic Mr. Fox",
                    "The Shape of Water", "A Serious Man", "Love Actually",
-                   "Isle of Dogs", "The Grand Budapest Hotel", "Call Me by Your Name", "The King's Speech", "La La Land", "The Big Short", "Birdman", "Her", "American Hustle"]
+                   "Isle of Dogs", "The Grand Budapest Hotel",
+                   "Call Me by Your Name", "The King's Speech", "La La Land",
+                   "The Big Short", "Birdman", "Her", "American Hustle"]
 
-#randomize the order so the page isn't the same everytime it's created
+# randomize the order so the page isn't the same everytime it's created
 shuffle(favorite_movies)
 
 # get list of movie objects; one for each favorite movie
