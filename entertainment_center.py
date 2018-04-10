@@ -10,8 +10,8 @@ def get_movie_id(key, title):
     Uses the The Movie Database api to search for an english-language,
     non-adult movie by its title and return its id.
 
-    key: str. api key for The Movie Database
-    title: str. the title of the movie whose id you want
+    key: str. Api key for The Movie Database
+    title: str. The title of the movie whose id you want
     """
 
     # the required values to insert after the generic request url
@@ -29,11 +29,12 @@ def get_movie_id(key, title):
 
 def make_movie(key, title):
     """
-    Uses the The Movie Database api to get info for a movie based on its id
-    and returns those details as a python object
+    Uses the The Movie Database api to get information for an
+    english-language, non-adult movie based on its title and returns those
+    details as a python object
 
-    key: str. api key for The Movie Database
-    title: str. the title of the movie whose information you want
+    key: str. Api key for The Movie Database
+    title: str. The title of the movie whose information you want
     """
 
     movie_id = get_movie_id(key, title)
